@@ -1,0 +1,222 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #111;
+  background: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.header {
+  padding: 1rem 0;
+}
+.logo {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+}
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.hero-text {
+  flex: 1;
+}
+.role {
+  color: #f4b400; /* Yellow accent */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.hero-text h1 span {
+  color: #111;
+}
+.description {
+  color: #444;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+}
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.btn-primary {
+  background: #f4b400;
+  color: #111;
+}
+.btn-primary:hover {
+  background: #d79e00;
+}
+.btn-outline {
+  border: 1px solid #111;
+  color: #111;
+}
+.btn-outline:hover {
+  background: #111;
+  color: #fff;
+}
+
+/* Hero layout */
+.hero {
+  padding: 4rem 0;
+}
+
+.hero-row {
+  display: flex;
+  justify-content: space-between; /* text left, image right */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+/* Left column */
+.hero-text {
+  flex: 1;
+}
+
+.tagline {
+  color: #f4b400;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Right column */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.circle-bg {
+  width: 350px;
+  height: 350px;
+  background: #f4b400;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.circle-bg img {
+  width: 90%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  margin-right: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.resume {
+  background: #f4b400;
+  color: #111;
+}
+.resume:hover {
+  background: #d79e00;
+}
+.linkedin {
+  border: 1px solid #111;
+  color: #111;
+}
+.linkedin:hover {
+  background: #111;
+  color: #fff;
+}
+
+/* Responsive (stack on small screens) */
+@media (max-width: 768px) {
+  .hero-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 2rem;
+  }
+
+  .circle-bg {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+
+/* Projects Section */
+.projects {
+  padding: 3rem 0;
+}
+.projects h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block; /* shrink-wrap around the text */
+}
+
+.projects h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;   /* exactly the width of the text */
+  height: 4px;
+  background: #f4b400;
+  border-radius: 2px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-image {
+    margin-top: 2rem;
+  }
+  .circle-bg {
+    width: 250px;
+    height: 250px;
+  }
+}
